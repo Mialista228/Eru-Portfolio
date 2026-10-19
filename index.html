@@ -1,17 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eru Portfolio</title>
+    <meta name="description" content="Личное резюме и портфолио" data-i18n-content="home.metaDescription">
+    <title data-i18n="home.title">Главная — Моё портфолио</title>
     <link rel="stylesheet" href="style.css">
+    <script src="language.js" defer></script>
 </head>
 
 <body>
-    <h1>
-        Hello! This is Eru's Portfolio
-    </h1>
+    <header class="site-header">
+        <a class="brand" href="index.html"><span data-i18n="common.brand">МОЁ ПОРТФОЛИО</span><span>.</span></a>
+        <nav class="site-nav" aria-label="Основная навигация" data-i18n-aria-label="common.navigation">
+            <a class="active" href="index.html" aria-current="page" data-i18n="common.home">Главная</a>
+            <a href="resume.html" data-i18n="common.resume">Резюме</a>
+            <a href="portfolio.html" data-i18n="common.portfolio">Портфолио</a>
+            <a href="about.html" data-i18n="common.about">Обо мне</a>
+            <button class="language-toggle" type="button" data-language-toggle
+                data-i18n="language.button" data-i18n-aria-label="language.switchToEnglish">EN</button>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <section class="hero">
+            <p class="eyebrow" data-i18n="home.eyebrow">ЛИЧНАЯ СТРАНИЦА</p>
+            <h1><span data-i18n="home.greeting">Привет!</span><br><span data-i18n="home.namePrefix">Я</span> <span data-i18n="home.name">Норбек</span></h1>
+            <p class="hero-copy" data-i18n="home.role">Разработчик игр на Unity, Инженер по разработке ПО</p>
+            <div class="button-row">
+                <a class="button button-primary" href="resume.html" data-i18n="home.resumeButton">Посмотреть резюме</a>
+                <a class="button button-secondary" href="portfolio.html" data-i18n="home.projectsButton">Мои проекты</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span data-i18n="home.footer">Личная страница</span>
+        <span>© <span id="year">2026</span></span>
+    </footer>
 </body>
 
 </html>

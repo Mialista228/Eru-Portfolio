@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Немного обо мне" data-i18n-content="about.metaDescription">
+    <title data-i18n="about.title">Обо мне — Моё портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="language.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html"><span data-i18n="common.brand">МОЁ ПОРТФОЛИО</span><span>.</span></a>
+        <nav class="site-nav" aria-label="Основная навигация" data-i18n-aria-label="common.navigation">
+            <a href="index.html" data-i18n="common.home">Главная</a>
+            <a href="resume.html" data-i18n="common.resume">Резюме</a>
+            <a href="portfolio.html" data-i18n="common.portfolio">Портфолио</a>
+            <a class="active" href="about.html" aria-current="page" data-i18n="common.about">Обо мне</a>
+            <button class="language-toggle" type="button" data-language-toggle
+                data-i18n="language.button" data-i18n-aria-label="language.switchToEnglish">EN</button>
+        </nav>
+    </header>
+
+    <main class="page-main about-main">
+        <div class="page-heading">
+            <p class="eyebrow" data-i18n="about.eyebrow">НЕСКОЛЬКО СЛОВ</p>
+            <h1><span data-i18n="about.heading">Обо мне</span><span>.</span></h1>
+            <p data-i18n="about.intro">Кто я, что мне интересно и куда я хочу двигаться.</p>
+        </div>
+
+        <section class="about-card">
+            <div class="about-mark" aria-hidden="true">✳</div>
+            <div>
+                <p class="eyebrow" data-i18n="about.greeting">ПРИВЕТ, Я НОРБЕК</p>
+                <h2 data-i18n="about.role">Разработчик игр на Unity, Инженер по разработке ПО</h2>
+                <p class="about-copy" data-i18n="about.paragraphOne">Обучаюсь по направлению программной инженерии в университете и более 5 лет увлекаюсь разработкой игр на движке Unity. Путь в GameDev начинал с базовых проектов (шутеры, гонки, головоломки), постепенно переходя к созданию сложных кастомных механик с нуля - от собственного контроллера физики транспорта до алгоритмов взаимодействия объектов.</p>
+                <p class="about-copy" data-i18n="about.paragraphTwo">Имею практический опыт проектирования мультиплеерных игр на фреймворке Mirror, а также работы с URP и Built-in Render Pipeline. Постоянно углубляю знания C# и архитектурных паттернов, осваиваю новые фреймворки и решения для оптимизации игровой логики. В мае 2026 года впервые принял участие в хакатоне GameFest в Ташкенте (GameJam на тему «Две реальности»): в одиночку разработал 2D-платформер за 36 часов и занял 19-е место из 100 участников.</p>
+            </div>
+        </section>
+
+        <section class="content-card interests-card">
+            <h2><span class="section-number">✳</span> <span data-i18n="about.interests">Мои интересы</span></h2>
+            <p class="muted" data-i18n="about.interestsDescription">Создавать треки в FL Studio, разрабатывать игры, иногда и рисовать</p>
+            <div class="tag-list">
+                <span data-i18n="about.interestGames">[Разработка игр]</span>
+                <span data-i18n="about.interestMusic">[Создание треков]</span>
+                <span data-i18n="about.interestDrawing">[Рисование]</span>
+            </div>
+        </section>
+
+        <section class="contact-banner">
+            <div>
+                <p class="eyebrow" data-i18n="about.contactEyebrow">БУДЕМ НА СВЯЗИ</p>
+                <h2 data-i18n="about.contactHeading">Есть вопрос или предложение?</h2>
+            </div>
+            <a class="button button-primary" href="resume.html"><span data-i18n="about.contactsButton">Мои контакты</span> <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span data-i18n="common.about">Обо мне</span>
+        <a href="index.html" data-i18n="common.backHome">На главную ↑</a>
+    </footer>
+</body>
+
+</html>
