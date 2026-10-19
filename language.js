@@ -1,6 +1,18 @@
 const languageStorageKey = "portfolio-language";
 const languageToggle = document.querySelector("[data-language-toggle]");
 
+async function loadTranslations(language) {
+    const url = new URL(`translations/${language}.json`, document.baseURI);
+    url.searchParams.set("_", Date.now().toString());
+
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) {
+        throw new Error(`Could not load ${language} translations: ${response.status}`);
+    }
+
+    return response.json();
+}
+
 function getTranslation(translations, key) {
     return key.split(".").reduce((value, part) => {
         if (value && typeof value === "object") {
@@ -11,12 +23,7 @@ function getTranslation(translations, key) {
 }
 
 async function applyLanguage(language) {
-    const response = await fetch(`translations/${language}.json`);
-    if (!response.ok) {
-        throw new Error(`Could not load ${language} translations: ${response.status}`);
-    }
-
-    const translations = await response.json();
+    const translations = await loadTranslations(language);
     const translatedElements = document.querySelectorAll("[data-i18n], [data-i18n-content], [data-i18n-alt], [data-i18n-aria-label]");
     for (const element of translatedElements) {
         for (const [keyAttribute, targetAttribute] of [
