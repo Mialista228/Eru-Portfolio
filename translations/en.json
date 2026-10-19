@@ -49,7 +49,7 @@
     "shooterTitle": "Multiplayer Shooter - Developer (Built-in RP, Mirror, UI Toolkit)",
     "shooterDescription": "Designed the network architecture and client-server player synchronization using the Mirror framework (Built-in Render Pipeline). Implemented lag compensation, state interpolation, and shooting logic. Created a custom weapon customization interface with UI Toolkit.",
     "racingTitle": "Racing Game Project - Developer (Built-in RP, Raycast Physics)",
-    "racingDescription": "Programmed custom vehicle physics using a raycast-based suspension instead of the standard WheelCollider. Implemented engine torque curve simulation, tire grip, and drifting mechanics. Created custom editor inspectors to make vehicle parameter debugging easier.",
+    "racingDescription": "Developed an arcade racing game with a strong focus on vehicle physics. Implemented engine torque curve simulation, tire friction/grip models, and tuned vehicle handling for drifting and high-speed stability.",
     "rtsTitle": "RTS Game - Developer (Universal Render Pipeline / URP)",
     "rtsDescription": "Developing a real-time strategy game using URP. Implemented unit selection and command systems, pathfinding AI, and resource management. Optimized graphics and shaders for URP scene lighting.",
     "gamefestTitle": "GameFest Game Jam - Participant (Rift)",
